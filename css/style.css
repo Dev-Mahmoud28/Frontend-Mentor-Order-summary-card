@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+html{
+  min-width: 375px;
+  max-width: 1440px;
+}
+body{
+  background-color: hsl(225, 100%, 94%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 374px){
+  body{
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 375px){
+  body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.container{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.container .image{
+  height: 171px;
+}
+.container .image img{
+  max-width: 100%;
+}
+.container .text{
+  padding: 15px;
+  text-align: center;
+}
+.container .text h2{
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.container .text p{
+  color: hsl(224, 23%, 55%);
+  margin-top: 15px;
+}
+.container .plan{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 15px;
+}
+.container .plan svg{
+  margin-right: 15px;
+}
+.container .plan .time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .plan .time .period{
+  color: hsl(223, 47%, 23%);
+}
+.container .plan .price{
+  color: hsl(224, 23%, 55%);
+}
+.container .plan .change{
+  margin-left: 70px;
+  transition: 0.3s;
+}
+.container .plan .change:hover{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+.container .btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.container .btn a:nth-child(1){
+  background-color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  color: white;
+  padding: 12px 75px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 30%);
+  transition: 0.3s;
+}
+.container .btn a:nth-child(1):hover{
+  background-color: hsl(224, 23%, 55%);
+}
+.container .btn a:nth-child(2){
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.container .btn a:nth-child(2):hover{
+  color: black;
+}
